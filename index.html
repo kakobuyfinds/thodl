@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f5f2e9">
+  <title>Sugargoo spreadsheet – svensk guide till produktlänkar och QC</title>
+  <meta name="description" content="Hitta skor, kläder och accessoarer. Läs hur du använder ett Sugargoo spreadsheet, jämför storlekar, granskar QC-bilder och räknar på frakt till Sverige.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="Sugargoo spreadsheet – svensk guide till produktlänkar och QC">
+  <meta property="og:description" content="Välj kategori, jämför produktmått och se vad du kan kontrollera på lagerbilderna innan du skickar ditt paket.">
+  <meta property="og:image" content="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tee-shirt-manches-courtes-en-coton--HRN47WZ34900_PM1_Cropped%20view.png?hei=840&amp;wid=840">
+  <meta property="og:image:alt" content="Modell i svart Louis Vuitton-tröja och monogramkeps">
+  <link rel="icon" href="https://www.hipobuyfind.com/favicon.ico">
+  <!-- Sökunderlag: Bing gav inga relevanta träffar för sökfrasen. Tio relevanta sidor från kompletterande webbsökning användes som ämnesunderlag. -->
+  <style>
+    :root{color-scheme:light;--paper:#f5f2e9;--ink:#192e2a;--muted:#435952;--line:#a9b3a8;--lime:#dcf188;--white:#fffdf7}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 system-ui,sans-serif}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-underline-offset:.22em}
+    :focus-visible{outline:3px solid #006b55;outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    .top,.foot{padding:1rem 0;display:flex;align-items:center;justify-content:space-between;gap:.75rem 1.25rem;flex-wrap:wrap}
+    .top{border-bottom:1px solid var(--line)}
+    .brand{font-weight:850;letter-spacing:-.025em}
+    .eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750}
+    .hero{margin-top:1rem;display:grid;grid-template-columns:1.45fr 1fr;background:var(--ink);color:var(--white)}
+    .hero-copy{padding:clamp(1.25rem,4vw,3.5rem);align-self:center}
+    .hero .eyebrow{color:var(--lime)}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.1}
+    h1{font:700 clamp(2.65rem,7vw,5.4rem)/.97 Georgia,serif;letter-spacing:-.058em;margin:.5rem 0 1rem}
+    h1 span{display:block}
+    h2{font-size:clamp(1.55rem,3.5vw,2.35rem);letter-spacing:-.035em}
+    h3{font-size:1.2rem}
+    p{max-width:70ch}
+    .hero-copy p+p{margin-top:.75rem}
+    .hero-copy .intro{color:#e6eee6}
+    .cta{display:inline-block;margin-top:1.05rem;padding:.65rem .95rem;background:var(--lime);color:var(--ink);font-weight:780;text-decoration:none;border:2px solid transparent}
+    .cta:hover{background:var(--white);border-color:var(--ink)}
+    .hero-image{display:grid;grid-template-rows:1fr auto;background:#d9d8d1;color:var(--ink)}
+    .hero-image img{width:100%;height:100%;min-height:0;aspect-ratio:1.2;object-fit:cover;object-position:center 8%}
+    figcaption{font-size:.84rem;padding:.5rem .7rem}
+    .section{margin:clamp(1.8rem,5vw,3.8rem) 0}
+    .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:.6rem 1.5rem;flex-wrap:wrap;margin-bottom:.9rem}
+    .section-head p,.note{color:var(--muted)}
+    .categories{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:0;padding:0;border:1px solid var(--line);gap:1px;background:var(--line)}
+    .categories a{display:flex;gap:.5rem;justify-content:space-between;align-items:center;height:100%;padding:.7rem;background:var(--white);text-decoration:none;font-weight:700;overflow-wrap:anywhere}
+    .categories a:hover{background:var(--lime)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+    .gallery figure{background:var(--white);border:1px solid var(--line)}
+    .gallery img{width:100%;aspect-ratio:1;object-fit:contain;background:#eeece6}
+    .note{margin-top:.75rem;font-size:.88rem}
+    .articles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    article{background:var(--white);padding:clamp(1rem,3vw,1.75rem);border-top:3px solid var(--ink)}
+    article .eyebrow{display:block;color:var(--muted);margin-bottom:.55rem}
+    article p{margin-top:.65rem}
+    .faq{padding:clamp(1rem,3vw,2rem);background:#e5ebd8}
+    details{border-bottom:1px solid var(--line)}
+    details:first-of-type{margin-top:.7rem}
+    summary{cursor:pointer;padding:.65rem 0;font-weight:730}
+    details p{padding-bottom:.8rem}
+    .foot{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+    @media(max-width:850px){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:640px){
+      .hero,.articles{grid-template-columns:1fr}
+      .hero-image img{aspect-ratio:2/1;height:auto;object-position:center top}
+      .categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "sv",
+    "name": "Sugargoo spreadsheet – svensk guide till produktlänkar och QC",
+    "description": "Hitta skor, kläder och accessoarer. Läs hur du använder ett Sugargoo spreadsheet, jämför storlekar, granskar QC-bilder och räknar på frakt till Sverige.",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vad är ett Sugargoo spreadsheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Det är en sammanställning av produktlänkar som hjälper dig att jämföra varor. Öppna originalannonsen för att kontrollera säljare, pris och tillgängliga varianter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vilka bilder ska jag jämföra vid en QC-kontroll?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jämför lagerbilderna för din egen beställning med den variant du valde. Be om en närbild eller ett foto med måttband om färg, söm eller mått är otydliga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur väljer jag storlek när tabellen anges i centimeter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mät ett plagg som sitter bra och jämför samma måttpunkter i säljarens tabell. Kontrollera om bredden är mätt plant eller anges som omkrets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur räknar jag på frakt till Sverige?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Använd Sverige som destination och jämför fraktalternativen med paketets vikt och yttermått. Lägg till eventuella avgifter och kontrollera vilka importkostnader som kan tillkomma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan en QC-bild styrka att en märkesvara är äkta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "QC-bilder visar synliga detaljer och skick. För att bedöma äkthet behöver du även kontrollera säljarens proveniens och relevant dokumentation."
+        }
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/thodl/">
+</head>
+<body>
+  <header class="top wrap">
+    <a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <span class="eyebrow">Svensk köpguide</span>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="eyebrow">Produktlänkar / Storlek / Frakt</p>
+        <h1 id="title">Sugargoo <span>spreadsheet</span></h1>
+        <p class="intro">Ett Sugargoo spreadsheet är en lista med produktlänkar som gör det enklare att jämföra skor, kläder och accessoarer. Välj kategori och använd guiden för att kontrollera variant, mått och total kostnad före köp.</p>
+        <a class="cta" href="https://www.hipobuyfind.com">Öppna Hipobuyfind ↗</a>
+      </div>
+      <figure class="hero-image">
+        <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tee-shirt-manches-courtes-en-coton--HRN47WZ34900_PM1_Cropped%20view.png?hei=840&amp;wid=840&amp;fmt=webp" width="840" height="840" alt="Modell i svart Louis Vuitton-tröja och monogramkeps" loading="eager" fetchpriority="high">
+        <figcaption>Stilreferens · Louis Vuitton</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="categories">
+      <div class="section-head">
+        <h2 id="categories">Bläddra efter kategori</h2>
+        <p>Hitta rätt avdelning på Hipobuyfind.</p>
+      </div>
+      <nav aria-labelledby="categories">
+        <ul class="categories">
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Skor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Huvtröjor och tröjor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Byxor och shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Kepsar och mössor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Matchande set <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underkläder <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Matchtröjor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoarer <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="section" aria-labelledby="guides">
+      <div class="section-head"><h2 id="guides">Fyra kontroller före köp</h2></div>
+      <div class="articles">
+        <article>
+          <span class="eyebrow">01 / Produktlänkar</span>
+          <h3>Hitta rätt variant i originalannonsen</h3>
+          <p>När du jämför produktlänkar från Weidian, Taobao och 1688, öppna säljarens annons och kontrollera artikelnummer, färgval och lagerstatus. Spara länken till originalannonsen tillsammans med vald variant och datum så att du kan hitta tillbaka till samma vara.</p>
+          <p>För ett matchande set, kontrollera om priset avser överdelen, underdelen eller båda. För matchtröjor, läs om tryck ingår och vilken placering som gäller. Läs säljarens returvillkor innan du går vidare.</p>
+        </article>
+        <article>
+          <span class="eyebrow">02 / Storleksguide</span>
+          <h3>Jämför centimeter för skor och kläder</h3>
+          <p>För sneakers, mät fotlängden stående och kontrollera om säljarens storlekstabell avser fotlängd eller innersulans längd. Jämför måttet innan du väljer EU-storlek.</p>
+          <p>För en huvtröja eller jacka, lägg ett plagg som passar plant och mät bröstbredd, plagglängd och ärmlängd. För byxor är midjevidd och innerbenslängd ofta mer användbara än storleksbokstaven. Kontrollera huvudomfånget för kepsar och armbandets innermått för smycken.</p>
+        </article>
+        <article>
+          <span class="eyebrow">03 / QC-bilder</span>
+          <h3>Granska lagerbilderna före leverans</h3>
+          <p>QC står för kvalitetskontroll. Börja med att jämföra lagerbilderna med säljarens produktbilder och ditt val av färg och storlek. Titta på sulor, sömmar, etiketter och synliga märken. För en t-shirt med tryck kan du be om en närbild av motivet och ett foto med måttband över bröstet.</p>
+          <p>Kontrollera vilka extra lagerbilder ombudet kan ta och hur länge du kan begära retur om varan avviker från beställningen.</p>
+        </article>
+        <article>
+          <span class="eyebrow">04 / Fraktguide</span>
+          <h3>Räkna på hela kostnaden till Sverige</h3>
+          <p>Summera varupriset, eventuell inrikesfrakt, ombudsavgifter och internationell frakt. Jämför faktisk vikt och volymvikt enligt villkoren för fraktalternativet. En skokartong kan påverka paketets yttermått även om den väger lite.</p>
+          <p>Om du samfraktar flera varor, jämför den färdigpackade försändelsen med separata paket. Räkna om till SEK och kontrollera vilka importkostnader som kan tillkomma innan du betalar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="references">
+      <div class="section-head"><h2 id="references">Stilreferenser för skor, plagg och detaljer</h2></div>
+      <div class="gallery">
+        <figure>
+          <img src="https://extrabutterny.com/cdn/shop/products/CW2288-111-1.jpg?v=1612207068&amp;width=420" width="420" height="420" alt="Vit Nike Air Force 1 ’07 med vit sula" loading="lazy" decoding="async">
+          <figcaption>Nike · Air Force 1 ’07</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/613J668B0677C080_E01-1?%24default_GH%24=&amp;crop=314%2C161%2C1353%2C1679&amp;extend=0%2C0%2C0%2C250&amp;hei=480&amp;wid=440" width="440" height="480" alt="Vit Christian Dior Couture-t-shirt med broderad text på bröstet" loading="lazy" decoding="async">
+          <figcaption>Dior · T-shirt i bomullsjersey</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1635459330/673251_3HAFX_2564_009_100_0000_Light-Casquette-en-toileGG-avec-cristaux.jpg" width="490" height="490" alt="Modell med beige Gucci-keps i GG-mönstrad canvas" loading="lazy" decoding="async">
+          <figcaption>Gucci · GG-keps</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.crepslocker.com/cdn/shop/files/hermes-paris-clic-h-black-bracelet-h700001fv01pm-front.webp?v=1716898801&amp;width=420" width="420" height="420" alt="Svart Hermès Clic H-armband med guldfärgat H-spänne" loading="lazy" decoding="async">
+          <figcaption>Hermès · Clic H-armband</figcaption>
+        </figure>
+      </div>
+      <p class="note">Bilderna är stilreferenser. Se den aktuella produktannonsen för att kontrollera sortiment och lagerstatus.</p>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq">
+      <h2 id="faq">Vanliga frågor</h2>
+      <details open>
+        <summary>Vad är ett Sugargoo spreadsheet?</summary>
+        <p>Det är en sammanställning av produktlänkar som hjälper dig att jämföra varor. Öppna originalannonsen för att kontrollera säljare, pris och tillgängliga varianter.</p>
+      </details>
+      <details>
+        <summary>Vilka bilder ska jag jämföra vid en QC-kontroll?</summary>
+        <p>Jämför lagerbilderna för din egen beställning med den variant du valde. Be om en närbild eller ett foto med måttband om färg, söm eller mått är otydliga.</p>
+      </details>
+      <details>
+        <summary>Hur väljer jag storlek när tabellen anges i centimeter?</summary>
+        <p>Mät ett plagg som sitter bra och jämför samma måttpunkter i säljarens tabell. Kontrollera om bredden är mätt plant eller anges som omkrets.</p>
+      </details>
+      <details>
+        <summary>Hur räknar jag på frakt till Sverige?</summary>
+        <p>Använd Sverige som destination och jämför fraktalternativen med paketets vikt och yttermått. Lägg till eventuella avgifter och kontrollera vilka importkostnader som kan tillkomma.</p>
+      </details>
+      <details>
+        <summary>Kan en QC-bild styrka att en märkesvara är äkta?</summary>
+        <p>QC-bilder visar synliga detaljer och skick. För att bedöma äkthet behöver du även kontrollera säljarens proveniens och relevant dokumentation.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="foot wrap">
+    <p>Fristående köpguide. Kategorilänkarna leder till Hipobuyfind.</p>
+    <a href="https://www.hipobuyfind.com">hipobuyfind.com ↗</a>
+  </footer>
+</body>
+</html>
